@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_loop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="循环播放" />
+
+        <Button
+            android:id="@+id/btn_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放5次" />
+
+        <Button
+            android:id="@+id/btn_stay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放结束停留最后一帧" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_stop_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最后一帧停留5秒" />
+    </LinearLayout>
+
+    <com.zengd0.frameanimation.MyImageFrameCustomView
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
